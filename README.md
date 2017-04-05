@@ -5,8 +5,10 @@ Trabalho desenvolvido durante a disciplina de BD
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-seu_nome:seu_email@dominio.com<br>
-segundo_nome:segundo_email@dominio.com<br>
+Gary Moura da Silva: garymsilva@outlook.com<br>
+José Guilherme Silva de Lima: email@dominio.com<br>
+Thales Lopes: email@dominio.com<br>
+Yago Henrique: yagozt.henrique@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
