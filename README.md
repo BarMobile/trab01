@@ -6,7 +6,7 @@ Trabalho desenvolvido durante a disciplina de BD
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Gary Moura da Silva: garymsilva@outlook.com<br>
-José Guilherme Silva de Lima: email@dominio.com<br>
+José Guilherme Silva de Lima: guislima47@gmail.com<br>
 Thales Lopes: email@dominio.com<br>
 Yago Henrique: yagozt.henrique@gmail.com<br>
 
