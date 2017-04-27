@@ -23,13 +23,16 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
 ###4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
+<b>Protótipo do Aplicativo Mobile</b> <br>
 
-<center><b>Protótipo do Aplicativo Mobile</center></b> <br>
-<br>
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png "Title")<br>
-<center>Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf</center> <br>
-<center><b>Protótipo do Sistema Principal</center></b><br>
+
+Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf> <br>
+
+<b>Protótipo do Sistema Principal</b><br>
+
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/Principal.png "Title")<br>
+
 <br>
 <center>Protótipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoPrincipal.pdf</center>
 
