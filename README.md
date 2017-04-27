@@ -26,7 +26,7 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 
 <center><b>Protótipo do Aplicativo Mobile</center></b> <br>
 <br>
-![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png "Title")
+![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png "Title")<br>
 <center>Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf</center> <br>
 <center><b>Protótipo do Sistema Principal</center></b><br>
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/Principal.png "Title")<br>
