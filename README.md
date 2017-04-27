@@ -15,21 +15,26 @@ Este documento contém a especificação do projeto do banco de dados <nome do p
 <br>e motivação da escolha realizada. <br>
 
 ### 3.MINI-MUNDO<br>
-
 Descrever o mini-mundo! (Não deve ser maior do que 30 linhas) <br>
 Entrevista com o usuário e identificação dos requisitos.<br>
 Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
 cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
 gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 
-### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+###4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-![Alt text](https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf "Title")
+<center><b>Protótipo do Aplicativo Mobile</center></b> 
 
-Prototipo Completo:https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf <br>
+![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png"Title")
 
-![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
+<center>Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf</center> <br>
+
+<center><b>Protótipo do Sistema Principal</center></b>
+
+![Alt text](https://github.com/BarMobile/trab01/blob/master/Principal.png"Title")
+
+<center>Protótipo Completo em: https://github.com/BarMobile/trab01/blob/master/PrototipoPrincipal.pdf</center>
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
 | Nome | Sobrenome | CPF | e-mail | Celular | Possui cartão | Numero do cartão | Dígito Verificador | Bandeira | Validade | Titular | Nome da empresa | CNPJ | Telefone | e-mail | Endereço | Responsável | Cadápio | Avaliações | Atendimentos |
