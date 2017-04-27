@@ -26,6 +26,7 @@ gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png "Title")
+
 Prototipo Completo:https://github.com/BarMobile/trab01/blob/master/PrototipoApp.pdf <br>
 
 ![Alt text](https://github.com/discipbd1/trab01/blob/master/balsamiq.png?raw=true "Title")
