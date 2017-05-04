@@ -7,7 +7,7 @@ Trabalho desenvolvido durante a disciplina de BD
 Integrantes do grupo<br>
 Gary Moura da Silva: garymsilva@outlook.com<br>
 José Guilherme Silva de Lima: guislima47@gmail.com<br>
-Thales Lopes: email@dominio.com<br>
+Thales Lopes: tvrl07031997@gmail.com<br>
 Yago Henrique: yagozt.henrique@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
