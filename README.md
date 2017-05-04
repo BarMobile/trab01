@@ -8,7 +8,7 @@ Integrantes do grupo<br>
 Gary Moura da Silva: garymsilva@outlook.com<br>
 José Guilherme Silva de Lima: guislima47@gmail.com<br>
 Thales Lopes: tvrl07031997@gmail.com<br>
-Yago Henrique: yagozt.henrique@gmail.com<br>
+Yago Henrique Zanon Trarbach: yagozt.henrique@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
