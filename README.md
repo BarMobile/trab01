@@ -11,8 +11,7 @@ Thalles Vargas Ribeiro Lopes: tvrl07031997@gmail.com<br>
 Yago Henrique Zanon Trarbach: yagozt.henrique@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
 <br>Plataforma que visa melhorar a eficiência no atendimento de bares, restaurantes e lanchonetes, já que ao acessá-lo como cliente permite que faça seu pedido pelo celular, além de outras funcionalidades como por exemplo poder até mesmo pagar a comanda pelo celular uma vez que o cartão foi cadastrado. Na visão do administrador o dono teria uma visão muito mais ampla de seu estabelecimento facilitando o seu gerenciamento com uma interface intuitiva.
 
 ### 3.MINI-MUNDO<br>
