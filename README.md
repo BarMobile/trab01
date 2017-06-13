@@ -114,11 +114,44 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     RESPONSÁVEL: Campo que armazena o nome do responsável de cada empresa cadastrada.
     LOGRADOURO: Campo que armazena o endereço de cada empresa cadastrada. 
     
+    BAIRRO: Tabela que armazena as informações do bairro das empresas cadastradas.
+    Nome: Campo que armazena o nome do bairro da empresa cadastrada.
+    
+    CIDADE: Tabela que armazena as informações da cidade das empresas cadastradas.
+    NOME: Campo que armazena o nome da cidade da empresa cadastrada.
+    
+    ESTADO: Tabela que armazena as informações dos estados das empresas cadastradas.
+    NOME: Campo que armazena o nome do estado da empresa cadastrada.
+    
     PRODUTO: Tabela que armazena as informações dos produtos.
     DESCRIÇÃO: Campo que armazena a descrição do produto.
     CATEGORIA: Campo que armazena a categoria do produto
     
+    PRODUTO_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
+    
+    ITEM_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
+    DESCRIÇÃO: Campo que armazena a descrição do item que está no estoque da empresa.
+    
+    EMPRESA_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
+    QUANTIDADE: Campo que armazena a quantidade de unidades do item que está no estoque.
+    
+    ITEM_VENDIDO: Tabela que armazena os itens vendidos.
+    QUANTIDADE: Campo que armazena a quantidade de unidades do item foi vendido.
+    PREÇO: Campo que armazena o preço da unidade do item vendido.   
+    
+    USUARIO_ITEM: Tabela que armazena os itens comprados dos usuários.
+    VALOR: Campo que armazena o valor da unidade do item comprado pelo usuário
 
+    ATENDIMENTO: Tabela que armazena as informações das mesas atendidas.
+    INICIO: Campo que armazena quando o atendimento foi iniciado.
+    FIM: Campo que armazena quando o atendimento foi finalizado.
+    MESA: Campo que armazena as mesas da empresa.
+    
+    EMPREGADO: Tabela que armazena as informações dos empregados da empresa.
+    NOME: Campo que armazena o nome de cada empregado da empresa.
+    CPF: Campo que armazena o cadatro de pessoa física de cada empregado da empresa.
+    
+    
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
