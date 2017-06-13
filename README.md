@@ -87,7 +87,33 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     EXEMPLO:
     CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
     CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
+    
+    USUARIO: Tabela que armazena as informações relativas ao usuário em geral da aplicação.
+    CPF: Campo que armazena o número de CPF para cada usuário
+    Data_Nasc: Campo que armazena a data de nascimento do usuário cadastrado.
+    
+    CARTAO: Tabela que armazena as informações relativas aos cartões de credito cadastrados.
+    NUMERO: Campo que armazena o Número impresso no cartão.
+    VERIFICADOR: Campo que armazena o número do código verificador.
+    VALIDADE: Campo que armazena a data de validade do cartão.
+    BANDEIRA: Campo que armazena o nome da bandeira do cartão.
+    CPF_TITULAR: Campo que armazena o CPF do titular.
+    TITULAR:Campo que armazena o nome do titular.
+    
+    USUARIO_CARTAO: Tabela que armazena as informações relativas ao usuário e seus respectivos cartões.
+    
+    AVALIACAO:  Tabela que armazena as informações relativas as avaliações feitas pelos usuários sobre cada atendimento.
+    TEXTO: Campo que armazena o comentário sobre a avaliação.
+    NOTA: Campo que armazena o número relativo a nota da avaliação.
+    
+    ATENDIMENTO: Tabela que armazena as inforções relativas ao atendimento do usuário com a empresa.
+    INICIO: Campo que armazena a hora de início do atendimento.
+    FIM: Campo que armazena a hora de fim do atendimento.
+    MESA: Campo que armazena a mesa do atendimento.
+    
+    USUARIO_ATENDIMENTO: Tabela que armazena as informações relativas ao atendimento para cada usuário.
+    
+    
 
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
