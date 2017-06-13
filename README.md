@@ -82,11 +82,6 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
     
     USUARIO: Tabela que armazena as informações relativas ao usuário em geral da aplicação.
     CPF: Campo que armazena o número de CPF para cada usuário
@@ -94,11 +89,11 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     
     CARTAO: Tabela que armazena as informações relativas aos cartões de credito cadastrados.
     NUMERO: Campo que armazena o Número impresso no cartão.
-    VERIFICADOR: Campo que armazena o número do código verificador.
+    VERIFICADOR: Campo que armazena o número do código verificador do cartão.
     VALIDADE: Campo que armazena a data de validade do cartão.
     BANDEIRA: Campo que armazena o nome da bandeira do cartão.
-    CPF_TITULAR: Campo que armazena o CPF do titular.
-    TITULAR:Campo que armazena o nome do titular.
+    CPF_TITULAR: Campo que armazena o CPF do titular do cartão.
+    TITULAR: Campo que armazena o nome do titular do cartão.
     
     USUARIO_CARTAO: Tabela que armazena as informações relativas ao usuário e seus respectivos cartões.
     
@@ -113,6 +108,15 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     
     USUARIO_ATENDIMENTO: Tabela que armazena as informações relativas ao atendimento para cada usuário.
     
+    EMPRESA: Tabela que armazena as informações de cada empresa cadastrada.
+    NOME: Campo que armazena o nome de cada empresa cadastrada.
+    CNPJ: Campo que armazena o CNPJ de cada empresa cadastrada.
+    RESPONSÁVEL: Campo que armazena o nome do responsável de cada empresa cadastrada.
+    LOGRADOURO: Campo que armazena o endereço de cada empresa cadastrada. 
+    
+    PRODUTO: Tabela que armazena as informações dos produtos.
+    DESCRIÇÃO: Campo que armazena a descrição do produto.
+    CATEGORIA: Campo que armazena a categoria do produto
     
 
 ### 6	MODELO LÓGICO<br>
