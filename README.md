@@ -265,6 +265,14 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (2, 'mais ou menos mais pra mais', '3', 3, 2),
         (3, 'mais ou menos mais pra menos', '2', 4, 1);
         
+        INSERT INTO USUARIO_CARTAO (ID, ID_cartao, ID_usuario) VALUES
+        (1,	1,	1),
+        (2,	2,	3),
+        (3,	3,	5),
+        (4,	4,	6),
+        (5,	5,	8),
+        (6,	6,	10)
+        
         
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
