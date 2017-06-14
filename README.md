@@ -403,6 +403,14 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (3, 20, 3),
         (4, 7, 1)
         
+        INSERT INTO recebe(ID_ATENDIMENTO, ID USUARIO) VALUES
+        (1,2),
+        (1,1),
+        (2,4),
+        (3,5),
+        (3,6),
+        (4,3)
+        
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (tabelas e estruturas de dados + dados a serem inseridos)
