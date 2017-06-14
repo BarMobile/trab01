@@ -415,27 +415,24 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-        `SELECT * FROM CARTAO`
-        `SELECT * FROM USUARIO_CARTAO`
-        `SELECT * FROM USUARIO`
-        `SELECT * FROM USUARIO_CONTATO`
-        `SELECT * FROM CONTATO`
-        `SELECT * FROM USUARIO_ATENDIMENTO`
-        `SELECT * FROM ATENDIMENTO`
-        `SELECT * FROM AVALIACAO`
-        `SELECT * FROM EMPREGADO`
-        `SELECT * FROM EMPRESA_CONTATO`
-        `SELECT * FROM EMPRESA`
-        `SELECT * FROM USUARIO_ITEM`
-        `SELECT * FROM ITEM_VENDIDO`
-        `SELECT * FROM PRODUTO`
-        `SELECT * FROM EMPRESA_PRODUTO`
-        `SELECT * FROM PRODUTO_ESTOQUE`
-        `SELECT * FROM EMPRESA_ESTOQUE`
-        `SELECT * FROM ITEM_ESTOQUE`
-        `SELECT * FROM BAIRRO`
-        `SELECT * FROM CIDADE`
-        `SELECT * FROM ESTADO`
+        `SELECT * FROM 	CARTAO`
+        `SELECT * FROM 	pertence_a`
+        `SELECT * FROM 	USUARIO`
+        `SELECT * FROM 	CONTATO`
+        `SELECT * FROM 	avalia`
+        `SELECT * FROM 	ATENDIMENTO`
+        `SELECT * FROM 	compra`
+        `SELECT * FROM 	EMPREGADO`
+        `SELECT * FROM 	EMPRESA`
+        `SELECT * FROM 	ITEM_VENDIDO`
+        `SELECT * FROM 	PRODUTO`
+        `SELECT * FROM 	vende`
+        `SELECT * FROM 	BAIRRO`
+        `SELECT * FROM 	CIDADE`
+        `SELECT * FROM 	ESTADO`
+        `SELECT * FROM 	recebe`
+        `SELECT * FROM 	tipo`
+        `SELECT * FROM 	contatavel`
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
         `SELECT * FROM USUARIO WHERE DT_NASC > '20000322'`
         `SELECT * FROM EMPRESA WHERE NOME = 'IFES'`
@@ -457,7 +454,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         `UPDATE CARTAO SET TITULAR = 'CICLANO' WHERE NUMERO = '5050404030302020'`
         `DELETE FROM USUARIO WHERE ID = 2`
         `DELETE FROM ATENDIMENTO WHERE MESA = 10`
-        `DELETE FROM AVALIACAO WHERE NOTA = 0`
+        `DELETE FROM avalia WHERE NOTA = 0`
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
         Entrega até este ponto em: (Data a ser definida)
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
