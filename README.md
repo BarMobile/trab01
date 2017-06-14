@@ -257,12 +257,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (37,'zxc@bar.com'	,'email'	),
         (38	,'cvb@bar.com'	,'email'	),
         (39	,'mnx@bar.com'	,'email'	),
-        (40	,'lkj@rest.com'	,'email'	);
-        
-        INSERT INTO AVALIACAO (ID, TEXTO, NOTA, ID_USUARIO, ID_ATENDIMETNO) VALUES
-        (1, 'ótimo', '5', 2, 3),
-        (2, 'mais ou menos mais pra mais', '3', 3, 2),
-        (3, 'mais ou menos mais pra menos', '4', 4, 1); 
+        (40	,'lkj@rest.com'	,'email'	)
 
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
@@ -278,21 +273,16 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         `SELECT * FROM CARTAO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/CARTAO.PNG](Cartao)
         `SELECT * FROM USUARIO_CARTAO`
         `SELECT * FROM USUARIO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/usuario.PNG](Usuario)
         `SELECT * FROM USUARIO_CONTATO`
         `SELECT * FROM CONTATO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/contato.PNG](Contato)
         `SELECT * FROM USUARIO_ATENDIMENTO`
         `SELECT * FROM ATENDIMENTO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/atendimento.PNG](atendimento)
         `SELECT * FROM AVALIACAO`
         `SELECT * FROM EMPREGADO`
         `SELECT * FROM EMPRESA_CONTATO`
         `SELECT * FROM EMPRESA`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/empresa.PNG](empresa)
         `SELECT * FROM USUARIO_ITEM`
         `SELECT * FROM ITEM_VENDIDO`
         `SELECT * FROM PRODUTO`
