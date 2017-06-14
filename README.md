@@ -190,17 +190,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (5, '984984984984', '687', '20170901', 'Mastercard',  'Brenno', '653875542'),
         (6, '657657657657', '354', '20201001', 'Elo', 'Ícaro',  '455566788');
 
-        INSERT INTO EMPRESA (ID, NOME, CNPJ, RESPONSAVEL, LOGRADOURO) VALUES
-        (1, 'ABC bar',  '3143254', 'José',	'rua x, 80'),
-        (2, 'JKL restaurante',  '6512374',	'João', 'av y, 150'),
-        (3, 'KWL bar', '3571748', 'Carlos', 'rua b, 72'),
-        (4, 'XYZ bar', '1438757', 'Henrique', 'rua p, 234'),
-        (5, 'BRT restaurante', '3510066', 'Antônio', 'av f, 345'),
-        (6, 'YYI restaurante', '2000647', 'Mário', 'rua t, 12'),
-        (7, 'ZXC bar',  '2542476', 'Cleiton', 'rua x, 98'),
-        (8, 'CVB bar', '9870564', 'Bernardo', 'av b, 92'),
-        (9, 'MNX bar', '6171468', 'Tarcisio', 'av k, 108'),
-        (10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37');
+        INSERT INTO EMPRESA (ID, NOME, CNPJ, RESPONSAVEL, LOGRADOURO, ID_BAIRRO) VALUES
+        (1, 'ABC bar',  '3143254', 'José',	'rua x, 80', 2),
+        (2, 'JKL restaurante',  '6512374',	'João', 'av y, 150', 3),
+        (3, 'KWL bar', '3571748', 'Carlos', 'rua b, 72', 4),
+        (4, 'XYZ bar', '1438757', 'Henrique', 'rua p, 234', 3),
+        (5, 'BRT restaurante', '3510066', 'Antônio', 'av f, 345', 2),
+        (6, 'YYI restaurante', '2000647', 'Mário', 'rua t, 12', 1),
+        (7, 'ZXC bar',  '2542476', 'Cleiton', 'rua x, 98', 4),
+        (8, 'CVB bar', '9870564', 'Bernardo', 'av b, 92', 3),
+        (9, 'MNX bar', '6171468', 'Tarcisio', 'av k, 108', 2),
+        (10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37', 1);
 
         INSERT INTO ATENDIMENTO (ID, INICIO, FIM, MESA, ID_EMPREGADO) VALUES
         (1, '20160926 22:11:00', '20160927 00:11:00', '3', 5),
@@ -284,13 +284,13 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (2, 15, 4),
         (4, 10, 1)
         
-        INSERT INTO EMPREGADO (ID, NOME, CPF, SALARIO) VALUES 
-        (1, 'FULANO', '11111111111', 3000),
-        (2, 'CICLANO', '22222222222', 2000 ),
-        (3, 'BELTRANO', '33333333333', 2500),
-        (4, 'JOAO', '44444444444', 1500),
-        (5, 'MARIA', '555555555555', 1800),
-        (6, 'JOSE', '66666666666', 4000)
+        INSERT INTO EMPREGADO (ID, NOME, CPF, SALARIO, ID_EMPRESA) VALUES 
+        (1, 'FULANO', '11111111111', 3000, 6),
+        (2, 'CICLANO', '22222222222', 2000, 5 ),
+        (3, 'BELTRANO', '33333333333', 2500, 3),
+        (4, 'JOAO', '44444444444', 1500), 2,
+        (5, 'MARIA', '555555555555', 1800, 1),
+        (6, 'JOSE', '66666666666', 4000, 4)
         
         INSERT INTO COMPRA (ID_USUARIO, VALOR_PAGO, ID_ITEM) VALUES 
         (1, 10, 1),
