@@ -60,7 +60,14 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     e deve ser criada antes do modelo conceitual)
 
 ### 5.MODELO CONCEITUAL<br>
+    A) NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Conceitual.jpg "Modelo Conceitual")
+    
+    B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
+    C) QUALIDADE 
+        Garantir que a semântica dos atributos seja clara no esquema
+        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
+        e tuplas falsas
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Nomes dos que participaram na avaliação]
@@ -146,7 +153,9 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     
     
 ### 6	MODELO LÓGICO<br>
-![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Logico.jpg "Modelo Lógico")
+        a) inclusão do modelo lógico do banco de dados
+        b) verificação de correspondencia com o modelo conceitual 
+        (não serão aceitos modelos que não estejam em conformidade)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
@@ -201,7 +210,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (9, 'MNX bar', '6171468', 'Tarcisio', 'av k, 108'),
         (10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37');
 
-        INSERT INTO ATENDIMENTO (ID, INICIO, FIM, MESA, ID_EMPRESA) VALUES
+        INSERT INTO ATENDIMENTO (ID, INICIO, FIM, MESA, ID_EMPREGADO) VALUES
         (1, '20160926 22:11:00', '20160927 00:11:00', '3', 5),
         (2, '20160527 17:12:00', '20160527 18:55:00', '25', 8),
         (3, '20161028 20:23:00', '20161028 23:40:00', '12', 4),
@@ -252,9 +261,9 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 
         INSERT INTO AVALIACAO (ID, TEXTO, NOTA, ID_USUARIO, ID_ATENDIMENTO) VALUES
-        (1, 'ótimo', '5', 2, 3),
-        (2, 'mais ou menos mais pra mais', '3', 3, 2),
-        (3, 'mais ou menos mais pra menos', '2', 4, 1);
+        (1, 'ótimo', 5, 2, 3),
+        (2, 'mais ou menos mais pra mais', 3, 3, 2),
+        (3, 'mais ou menos mais pra menos', 2, 4, 1);
         
         INSERT INTO USUARIO_CARTAO (ID, ID_cartao, ID_usuario) VALUES
         (1,	1,	1),
@@ -290,6 +299,12 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (4, 'JOAO', '44444444444', 1500),
         (5, 'MARIA', '555555555555', 1800),
         (6, 'JOSE', '66666666666', 4000)
+        
+        INSERT INTO COMPRA (ID_USUARIO, VALOR_PAGO, ID_ITEM) VALUES 
+        (1, 10, 1),
+        (2, 15, 2),
+        (3, 20, 3),
+        (4, 7, 1)
         
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
