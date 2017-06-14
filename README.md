@@ -145,7 +145,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     ATENDIMENTO: Tabela que armazena as informações das mesas atendidas.
     INICIO: Campo que armazena quando o atendimento foi iniciado.
     FIM: Campo que armazena quando o atendimento foi finalizado.
-    MESA: Campo que armazena as mesas da empresa.
+    MESA: Campo que armazena a mesa correspondente ao atendimento.
     
     EMPREGADO: Tabela que armazena as informações dos empregados da empresa.
     NOME: Campo que armazena o nome de cada empregado da empresa.
@@ -177,6 +177,46 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 #### 8.2 INCLUSÃO DO SCRIPT DE INSERÇÃO DOS DADOS
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         b) inclusão das instruções para execução de outros procedimentos necessários (caso existam)
+        
+        INSERT INTO USUARIO (ID, NOME, CPF, DATA_NASC) VALUES 
+        (1, 'Gary', '123.456.789', '19970123'),
+        (2, 'José', '456.789.123', '19961110'),
+        (3, 'Yago', '951.385.357', '19950522'),
+        (4, 'Thalles', '654.357.159', '19960430'),
+        (5, 'Luiz', '356.156.657', '19970731'),
+        (6, 'Gabriel', '954.687.621', '19970615'),
+        (7, 'Paulo', '459.684.159', '19950202'),
+        (8, 'Brenno', '653.875.542', '19971106'),
+        (9, 'Ana', '986.154.266', '19960324'),
+        (10, 'Ícaro', '455.566.788', '19970620');
+
+        INSERT INTO CARTAO (ID, NUMERO, VERIFICADOR, VALIDADE, BANDEIRA, TITULAR, CPF_TITULAR) VALUES
+        (1, '456.456.456.456', '987', 05/2020, 'Visa', 'Gary', '123.456.789'),
+        (2, '654.654.654.654', '321', 06/2019, 'Mastercard', 'Yago', '951385357'),
+        (3, '321.321.321.321', '159', 04/2018, 'Visa', 'Luiz', '356156657'),
+        (4, '354.354.354.354', '476', 03/2019, 'Visa',  'Gabriel', '954.687.621'),
+        (5, '984.984.984.984', '687', 09/2017, 'Mastercard',  'Brenno', '653.875.542'),
+        (6, '657.657.657.657', '354', 10/2020, 'Elo', 'Ícaro',  '455.566.788');
+
+        INSERT INTO EMPRESA (ID, NOME, CNPJ, RESPONSAVEL, LOGRADOURO) VALUES
+        (1, 'ABC bar',  '3143254', 'José',	'rua x, 80'),
+        (2, 'JKL restaurante',  '6512374',	'João', 'av y, 150'),
+        (3, 'KWL bar', '3571748', 'Carlos', 'rua b, 72'),
+        (4, 'XYZ bar', '1438757', 'Henrique', 'rua p, 234'),
+        (5, 'BRT restaurante', '3510066', 'Antônio', 'av f, 345'),
+        (6, 'YYI restaurante', '2000647', 'Mário', 'rua t, 12'),
+        (7, 'ZXC bar',  '2542476', 'Cleiton', 'rua x, 98'),
+        (8, 'CVB bar', '9870564', 'Bernardo', 'av b, 92'),
+        (9, 'MNX bar', '6171468', 'Tarcisio', 'av k, 108'),
+        10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37');
+
+        INSERT INTO ATENDIMENTO (ID, INICIO, FIM, MESA, ID_EMPRESA) VALUES
+        (1, '26/09/2016 22:11:00', '27/09/2016 00:11:00', '3', 5),
+        (2, '27/05/2016 17:12:00', '27/05/2016 18:55:00', '25', 8),
+        (3, '28/10/2016 20:23:00', '28/10/2016 23:40:00', '12', 4),
+        (4, '29/04/2016 19:46:00', '29/04/2016 21:31:00', '8', 9),
+        (5, '30/09/2016 21:12:00', '01/10/2016 01:05:00', '19', 6);
+
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
