@@ -150,140 +150,12 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 
 ### 7	MODELO FÍSICO<br>
+        a) inclusão das instruções de criacão das estruturas DDL 
+        (criação de tabelas, alterações, etc..)
         
-        CREATE TABLE Item_vendido (
-            ID int PRIMARY KEY,
-            Preco double,
-            Quantidade int,
-            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
-            FOREIGN KEY (ID_atendimento) REFERENCES Atendimento (ID)
-        )
-
-        CREATE TABLE Produto (
-            ID int PRIMARY KEY,
-            Descrição varchar,
-            Categoria varchar
-        )
-
-        CREATE TABLE Estado (
-            Nome varchar,
-            ID int PRIMARY KEY
-        )
-
-        CREATE TABLE Cidade (
-            ID int PRIMARY KEY,
-            Nome varchar,
-            ID_estado int,
-            FOREIGN KEY(ID_estado) REFERENCES Estado (ID)
-        )
-
-        CREATE TABLE Atendimento (
-            ID int PRIMARY KEY,
-            Inicio timestamp,
-            Fim timestamp,
-            Mesa int,
-            FOREIGN KEY(ID_empregado) REFERENCES Empregado (ID)
-        )
-
-        CREATE TABLE Empresa (
-            Nome varchar,
-            CNPJ char,
-            ID int PRIMARY KEY,
-            Responsavel varchar,
-            Logradouro varchar,
-            FOREIGN KEY(ID_bairro) REFERENCES Bairro (ID)
-        )
-
-        CREATE TABLE Bairro (
-            ID int PRIMARY KEY,
-            Nome varchar,
-            ID_cidade int,
-            FOREIGN KEY(ID_cidade) REFERENCES Cidade (ID)
-        )
-
-        CREATE TABLE Contato (
-            ID int PRIMARY KEY,
-            Contato varchar,
-            ID_dono int,
-            FOREIGN KEY(ID_contatavel) REFERENCES Contatavel (ID),
-            FOREIGN KEY(ID_tipo) REFERENCES Tipo (ID)
-        )
-
-        CREATE TABLE Empregado (
-            Nome varchar,
-            CPF char,
-            ID int PRIMARY KEY,
-            Salário double,
-            ID_empresa int,
-            FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
-        )
-
-        CREATE TABLE Usuario (
-            ID int PRIMARY KEY,
-            CPF char,
-            Nome varchar,
-            Data_nasc Date
-        )
-
-        CREATE TABLE Cartao (
-            ID int PRIMARY KEY,
-            Numero char,
-            Verificador int,
-            Validade Date,
-            Bandeira varchar,
-            Titular varchar,
-            CPF_Titular char
-        )
-
-        CREATE TABLE Contatavel (
-            ID int PRIMARY KEY,
-            Tipo varchar
-        )
-
-        CREATE TABLE Tipo (
-            ID int PRIMARY KEY,
-            Nome varchar
-        )
-
-        CREATE TABLE pertence_a (
-            ID_usuario int,
-            ID_cartao int,
-            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID),
-            FOREIGN KEY(ID_cartao) REFERENCES Cartao (ID)
-        )
-
-        CREATE TABLE recebe (
-            ID_atendimento int,
-            ID_usuario int,
-            FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
-            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
-
-        CREATE TABLE avalia (
-            Nota double,
-            Avaliacao varchar,
-            ID_atendimento int,
-            ID_usuario int,
-            FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
-            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
-
-        CREATE TABLE compra (
-            Valor_pago double,
-            ID_item int,
-            ID_usuario int,
-            FOREIGN KEY(ID_item) REFERENCES Item_vendido (ID),
-            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
-
-        CREATE TABLE vende (
-            Preco double,
-            ID_produto int,
-            ID_empresa int,
-            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
-            FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
-        )
-
+        
+        
+        Entrega até este ponto em: (Data a ser definida)
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
@@ -337,47 +209,27 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (4, '20160429 19:46:00', '20160429 21:31:00', '8', 9),
         (5, '20160930 21:12:00', '20161001 01:05:00', '19', 6);
         
-        INSERT INTO CONTATO(ID, Contato, Tipo) VALUES
-        (1,'27999998888'	,'telefone'	),
-        (2,'27988889999'	,'telefone'	),
-        (3,'27987876868'	,'telefone'	),
-        (4,'27985849194'	,'telefone'	),
-        (5,'27999664488'	,'telefone'	),
-        (6,'27999115588'	,'telefone'	),
-        (7,'27988556688'	,'telefone'	),
-        (8,'27933445566'	,'telefone'	),
-        (9,'27987859898'	,'telefone'	),
-        (10,'27986868787'	,'telefone'	),
-        (11,'gary@email.com'	,'email'	),
-        (12,'ze@email.com'	,'email'	),
-        (13,'yago@email.com'	,'email'	),
-        (14,'thales@email.com'	,'email'	),
-        (15,'luiz@email.com'	,'email'	),
-        (16,'gabriel@email.com'	,'email'	),
-        (17,'paulo@email.com'	,'email'	),
-        (18,'brenno@email.com'	,'email'	),
-        (19,'ana@email.com'	,'email'	),
-        (20,'icaro@email.com'	,'email'	),
-        (21,'33224455'	,'telefone'	),
-        (22,'33335556'	,'telefone'	),
-        (23,'33213321'	,'telefone'	),
-        (24,'33324567'	,'telefone'	),
-        (25,'33456711'	,'telefone'	),
-        (26,'33184455'	,'telefone'	),
-        (27,'33164878'	,'telefone'	),
-        (28,'33261548'	,'telefone'	),
-        (29,'33649754'	,'telefone'	),
-        (30,'32315754'	,'telefone'	),
-        (31,'abc@bar.com'	,'email'	),
-        (32,'jkl@rest.com'	,'email'	),
-        (33,'kwl@bar.com'	,'email'	),
-        (34,'xyz@bar.com'	,'email'	),
-        (35,'brt@rest.com'	,'email'	),
-        (36,'yyi@rest.com'	,'email'	),
-        (37,'zxc@bar.com'	,'email'	),
-        (38	,'cvb@bar.com'	,'email'	),
-        (39	,'mnx@bar.com'	,'email'	),
-        (40	,'lkj@rest.com'	,'email'	)
+        INSERT INTO CONTATO(ID, Contato, Id_dono, Id_contavel,Id_tipo) VALUES
+        (1,'27999998888',1,1,2),
+        (2,'27988889999',2,1,2),
+        (3,'27987876868',3,1,2),
+        (4,'27985849194',4,1,2),
+        (5,'27999664488',5,1,2),
+        (6,'27999115588',6,1,2),
+        (7,'27988556688',7,1,2),
+        (8,'27933445566',8,1,2),
+        (9,'27987859898',9,1,2),
+        (10,'27986868787',10,1,2),
+        (11,'gary@email.com',5,2,1),
+        (12,'ze@email.com',6,2,1),
+        (13,'yago@email.com',7,2,1),
+        (14,'thales@email.com',8,2,1),
+        (15,'luiz@email.com',1,2,1),
+        (16,'gabriel@email.com',2,2,1),
+        (17,'paulo@email.com',3,2,1),
+        (18,'brenno@email.com',4,2,1),
+        (19,'ana@email.com',5,2,1),
+        (20,'icaro@email.com',6,2,1)
 
 
         INSERT INTO AVALIACAO (ID, TEXTO, NOTA, ID_USUARIO, ID_ATENDIMENTO) VALUES
@@ -385,7 +237,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (2, 'mais ou menos mais pra mais', 3, 3, 2),
         (3, 'mais ou menos mais pra menos', 2, 4, 1);
         
-        INSERT INTO USUARIO_CARTAO (ID, ID_cartao, ID_usuario) VALUES
+        INSERT INTO pertence_a (ID, ID_cartao, ID_usuario) VALUES
         (1,	1,	1),
         (2,	2,	3),
         (3,	3,	5),
