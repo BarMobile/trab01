@@ -61,7 +61,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 ### 5.MODELO CONCEITUAL<br>
     A) NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Bar.jpg "Modelo Conceitual")
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Conceitual.jpg "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
