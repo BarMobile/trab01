@@ -818,9 +818,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
         SELECT * FROM EMPRESA WHERE NOME NOT LIKE '%IFES%'
-        SELECT * FROM PRODUTO WHERE DESCRICAO LIKE '%BATATA%'
-        SELECT * FROM CARTAO WHERE TITULAR LIKE '%JOAO%'
-        SELECT * FROM CONTATO WHERE TIPO LIKE 'CEL'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/like/like_empresa.PNG "Empresa")
+        
+        SELECT * FROM PRODUTO WHERE DESCRICAO LIKE 'Coca Cola%'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/like/like_produto.PNG "Produto")
+
+        SELECT * FROM CARTAO WHERE TITULAR LIKE '%JO_O%'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/like/like_cartao.PNG "Cartao")
+        
+        SELECT * FROM CONTATO WHERE CONTATO LIKE '2799%'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/like/like_contato.PNG "Contato")
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
         `UPDATE USUARIO SET DATA_NASC = '19900220' WHERE ID = 1`
         `UPDATE EMPREGADO SET SALARIO = 3000 WHERE NOME IS LIKE 'FULANO'`
