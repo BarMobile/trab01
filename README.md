@@ -72,11 +72,23 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
-
     USUARIO: Tabela que armazena as informações relativas ao usuário em geral da aplicação.
-    CPF: Campo que armazena o número de CPF para cada usuário
+    NOME: Campo que armazena o nome de cada usuário cadastrado
+    CPF: Campo que armazena o número de CPF para cada usuário cadastrado.
     Data_Nasc: Campo que armazena a data de nascimento do usuário cadastrado.
-    
+    -
+    CONTATO: Tabela que armazena as informações relativas aos contatos dos usuários cadastrados.
+    CONTATO: Campo que armazena o contato do usuário.
+    ID_DONO: Campo que armazena o ID do dono do contato correspondente.
+    ID_CONTATAVEL: Campo que armazena o ID do tipo de usuário.
+    ID_TIPO: Campo que armazena o ID do tipo de contato correspondente.
+    -   
+    TIPO: Tabela que armazena o tipo do contato cadastrado.
+    Nome: Campo que armazena o nome do meio de comunicação do contato correspondente.
+    -
+    CONTATAVEL: Tabela que armazena o tipo do usuário cadastrado.
+    TIPO: Campo que armazena o tipo do usuário que está cadastrado.
+    -
     CARTAO: Tabela que armazena as informações relativas aos cartões de credito cadastrados.
     NUMERO: Campo que armazena o Número impresso no cartão.
     VERIFICADOR: Campo que armazena o número do código verificador do cartão.
@@ -84,62 +96,67 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     BANDEIRA: Campo que armazena o nome da bandeira do cartão.
     CPF_TITULAR: Campo que armazena o CPF do titular do cartão.
     TITULAR: Campo que armazena o nome do titular do cartão.
-    
-    USUARIO_CARTAO: Tabela que armazena as informações relativas ao usuário e seus respectivos cartões.
-    
-    AVALIACAO:  Tabela que armazena as informações relativas as avaliações feitas pelos usuários sobre cada atendimento.
-    TEXTO: Campo que armazena o comentário sobre a avaliação.
+    -
+    PERTENCE A: Tabela que armazena as relações entre usuários e cartões.   
+    ID_CARTÃO: Campo que armazena o ID do cartão.
+    ID_USUARIO: Campo que armazena o ID do usuário a qual o cartão pertence.
+    -   
+    AVALIA:  Tabela que armazena as informações relativas as avaliações feitas pelos usuários sobre cada atendimento.
+    AVALIACAO: Campo que armazena o comentário sobre a avaliação.
     NOTA: Campo que armazena o número relativo a nota da avaliação.
-    
+    ID_ATENDIMENTO: Campo que armazena o ID do atendimento correspondente a avaliação. 
+    iD_USUARIO:  Campo que armazena o ID do usuário correspondente a sua avaliação.
+    -
+    RECEBE: Tabela que os IDs do usuário e de seu atendimento correspondente.
+    ID_USUARIO: Campo que armazena o ID do usuário que recebeu o atendimento.
+    ID_ATENDIMENTO: Campo que armazena o ID do atendimento correspondente.
+    -
     ATENDIMENTO: Tabela que armazena as inforções relativas ao atendimento do usuário com a empresa.
     INICIO: Campo que armazena a hora de início do atendimento.
     FIM: Campo que armazena a hora de fim do atendimento.
     MESA: Campo que armazena a mesa do atendimento.
-    
-    USUARIO_ATENDIMENTO: Tabela que armazena as informações relativas ao atendimento para cada usuário.
-    
+    ID_EMPREGADO: Campo que armazena o ID do empregado que realizou o atendimento correspondente.
+    -
     EMPRESA: Tabela que armazena as informações de cada empresa cadastrada.
     NOME: Campo que armazena o nome de cada empresa cadastrada.
     CNPJ: Campo que armazena o CNPJ de cada empresa cadastrada.
-    RESPONSÁVEL: Campo que armazena o nome do responsável de cada empresa cadastrada.
+    RESPONSAVEL: Campo que armazena o nome do responsável de cada empresa cadastrada.
     LOGRADOURO: Campo que armazena o endereço de cada empresa cadastrada. 
-    
-    BAIRRO: Tabela que armazena as informações do bairro das empresas cadastradas.
+    ID_BAIRRO: Campo que armazena o ID do bairro da empresa em questão.
+    -
+    BAIRRO: Tabela que armazena as informações dos bairros das empresas cadastradas.
     Nome: Campo que armazena o nome do bairro da empresa cadastrada.
-    
-    CIDADE: Tabela que armazena as informações da cidade das empresas cadastradas.
+    -
+    CIDADE: Tabela que armazena as informações das cidades das empresas cadastradas.
     NOME: Campo que armazena o nome da cidade da empresa cadastrada.
-    
+    -
     ESTADO: Tabela que armazena as informações dos estados das empresas cadastradas.
     NOME: Campo que armazena o nome do estado da empresa cadastrada.
-    
+    -
+    VENDE: Tabela que armazena a relação entre empresa e produto.
+    PREÇO: Campo que armazena o valor  da venda.
+    ID_PRODUTO: Campo que armazena o ID do produto vendido.
+    ID_EMPRESA: Campo que armazena o ID da empresa que vendeu o produto
+    -
     PRODUTO: Tabela que armazena as informações dos produtos.
     DESCRIÇÃO: Campo que armazena a descrição do produto.
     CATEGORIA: Campo que armazena a categoria do produto
-    
-    PRODUTO_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
-    
-    ITEM_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
-    DESCRIÇÃO: Campo que armazena a descrição do item que está no estoque da empresa.
-    
-    EMPRESA_ESTOQUE: Tabela que armazena as informações relativas ao estoque da empresa.
-    QUANTIDADE: Campo que armazena a quantidade de unidades do item que está no estoque.
-    
+    -
     ITEM_VENDIDO: Tabela que armazena os itens vendidos.
     QUANTIDADE: Campo que armazena a quantidade de unidades do item foi vendido.
     PREÇO: Campo que armazena o preço da unidade do item vendido.   
-    
-    USUARIO_ITEM: Tabela que armazena os itens comprados dos usuários.
-    VALOR: Campo que armazena o valor da unidade do item comprado pelo usuário
-
-    ATENDIMENTO: Tabela que armazena as informações das mesas atendidas.
-    INICIO: Campo que armazena quando o atendimento foi iniciado.
-    FIM: Campo que armazena quando o atendimento foi finalizado.
-    MESA: Campo que armazena a mesa correspondente ao atendimento.
-    
+    ID_PRODUTO: Campo que armazena o ID do produto vendido.
+    ID_ATENDIMENTO: Campo que armazena o ID do atendimento em que o produto foi vendido.
+    -
+    COMPRA: Tabela que armazena os IDs dos itens comprados e os usuários que compraram 
+    ID_ ITEM: Campo que armazena o ID do item que foi comprado.
+    ID_USUARIO: Campo que armazena o ID do usuário que comprou o iten correspondente.
+    -
     EMPREGADO: Tabela que armazena as informações dos empregados da empresa.
     NOME: Campo que armazena o nome de cada empregado da empresa.
     CPF: Campo que armazena o cadatro de pessoa física de cada empregado da empresa.
+    SALARIO: Campo que armazena o sálario recebido pelo empregado.
+    ID_EMPRESA: Campo que armazena o ID da empresa a qual o empregado trabalha.
     
     
 ### 6	MODELO LÓGICO<br>
