@@ -61,7 +61,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 ### 5.MODELO CONCEITUAL<br>
     A) NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Conceitual.jpg "Modelo Conceitual")
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Bar.jpg "Modelo Conceitual")
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
@@ -273,6 +273,32 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (5,	5,	8),
         (6,	6,	10)
         
+        INSERT INTO item_vendido(ID, QUANTIDADE,PRECO, id_produto) VALUES
+        (1, 2, 10, 1),
+        (2, 1, 15, 2),
+        (3, 1, 60, 3),
+        (4, 2, 10, 4)
+        
+        INSERT INTO PRODUTO (ID, DESCRICAO, CATEGORIA) VALUES
+        (1, 'Budweiser', 'Cerveja'),
+        (2, 'Batata Frita', 'Porcao'),
+        (3, 'Frango a passarinho', 'Porcao'),
+        (4, 'Coca Cola 2l', 'Refrigerante')
+        
+        INSERT INTO vende (id_produto, preco, id_empresa) VALUES 
+        (1, 10,1),
+        (1, 7,2),
+        (2, 15, 3),
+        (2, 15, 4),
+        (4, 10, 1)
+        
+        INSERT INTO EMPREGADO (ID, NOME, CPF, SALARIO) VALUES 
+        (1, 'FULANO', '11111111111', 3000),
+        (2, 'CICLANO', '22222222222', 2000 ),
+        (3, 'BELTRANO', '33333333333', 2500),
+        (4, 'JOAO', '44444444444', 1500),
+        (5, 'MARIA', '555555555555', 1800),
+        (6, 'JOSE', '66666666666', 4000)
         
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
