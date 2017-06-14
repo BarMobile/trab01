@@ -167,42 +167,42 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
         CREATE TABLE Produto (
             ID int PRIMARY KEY,
-            Descrição varchar,
-            Categoria varchar
+            Descricao varchar(200),
+            Categoria varchar(30)
         );
 
         CREATE TABLE Estado (
-            Nome varchar,
+            Nome varchar(20),
             ID int PRIMARY KEY
         );
 
         CREATE TABLE Cidade (
             ID int PRIMARY KEY,
-            Nome varchar,
+            Nome varchar(50),
             ID_estado int,
             FOREIGN KEY(ID_estado) REFERENCES Estado (ID)
         );
 
         CREATE TABLE Bairro (
             ID int PRIMARY KEY,
-            Nome varchar,
+            Nome varchar(50),
             ID_cidade int,
             FOREIGN KEY(ID_cidade) REFERENCES Cidade (ID)
         );
 
         CREATE TABLE Empresa (
-            Nome varchar,
-            CNPJ char,
+            Nome varchar(50),
+            CNPJ char(14),
             ID int PRIMARY KEY,
-            Responsavel varchar,
-            Logradouro varchar,
+            Responsavel varchar(50),
+            Logradouro varchar(100),
             ID_bairro int,
             FOREIGN KEY(ID_bairro) REFERENCES Bairro (ID)
         );
 
         CREATE TABLE Empregado (
             Nome varchar,
-            CPF char,
+            CPF char(11),
             ID int PRIMARY KEY,
             Salario numeric,
             ID_empresa int,
@@ -230,17 +230,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
         CREATE TABLE Contatavel (
             ID int PRIMARY KEY,
-            Tipo varchar
+            Tipo varchar(50)
         );
 
         CREATE TABLE Tipo (
             ID int PRIMARY KEY,
-            Nome varchar
+            Nome varchar(20)
         );
 
         CREATE TABLE Contato (
             ID int PRIMARY KEY,
-            Contato varchar,
+            Contato varchar(50),
             ID_dono int,
             ID_contatavel int,
             ID_tipo int,
@@ -250,19 +250,19 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
         CREATE TABLE Usuario (
             ID int PRIMARY KEY,
-            CPF char,
-            Nome varchar,
+            CPF char(11),
+            Nome varchar(100),
             Data_nasc Date
         );
 
         CREATE TABLE Cartao (
             ID int PRIMARY KEY,
-            Numero char,
+            Numero char(16),
             Verificador int,
             Validade Date,
-            Bandeira varchar,
-            Titular varchar,
-            CPF_Titular char
+            Bandeira varchar(30),
+            Titular varchar(50),
+            CPF_Titular char(11)
         );
 
         CREATE TABLE pertence_a (
@@ -281,7 +281,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
         CREATE TABLE avalia (
             Nota real,
-            Avaliacao varchar,
+            Avaliacao varchar(300),
             ID_atendimento int,
             ID_usuario int,
             FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
