@@ -27,7 +27,7 @@ No modo administrador o cliente  terá acesso a funções para auxiliar no geren
 No modo “Atendimento”, o cliente visualizará um “quadro de mesas”, onde poderá definir a quantidade de mesas que estarão disponíveis para os clientes no aplicativo e atender os pedidos que serão mostrados de forma dinâmica e prática. Também terá acesso a comanda do cliente, onde poderá ver o total comprado por cada um e finalizar um atendimento.
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
+
 <b>Protótipo do Aplicativo Mobile</b> <br>
 
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/app.png "Title")<br>
@@ -55,9 +55,6 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 | Ana | Carolina | 986.154.266 | ana@email.com | 27 9 8785 9898 | 0 | - | - | - | - | - | MNX bar | 6171468 | 33649754 | mnx@bar.com | av k, 108 | Tarcisio | Item1, Item2, Item3, Item4... | Avaliação1, Avaliação2... | Atendimento1, Atendimento2... |
 | Ícaro | Gandini | 455.566.788 | icaro@email.com | 27 8 8686 8787 | 1 | 657.657.657.657 | 354 | Elo | 10/2020 | Ícaro | LKJ restaurante | 6211844 | 32315754 | lkj@rest.com | rua w, 37 | Lucas | Item1, Item2, Item3, Item4... | Avaliação1, Avaliação2... | Atendimento1, Atendimento2... |
 
-    Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
-    (esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
-    e deve ser criada antes do modelo conceitual)
 
 ### 5.MODELO CONCEITUAL<br>
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Conceitual.jpg "Modelo Conceitual")
@@ -150,12 +147,140 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 
 ### 7	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas DDL 
-        (criação de tabelas, alterações, etc..)
         
-        
-        
-        Entrega até este ponto em: (Data a ser definida)
+        CREATE TABLE Item_vendido (
+            ID int PRIMARY KEY,
+            Preco double,
+            Quantidade int,
+            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
+            FOREIGN KEY (ID_atendimento) REFERENCES Atendimento (ID)
+        )
+
+        CREATE TABLE Produto (
+            ID int PRIMARY KEY,
+            Descrição varchar,
+            Categoria varchar
+        )
+
+        CREATE TABLE Estado (
+            Nome varchar,
+            ID int PRIMARY KEY
+        )
+
+        CREATE TABLE Cidade (
+            ID int PRIMARY KEY,
+            Nome varchar,
+            ID_estado int,
+            FOREIGN KEY(ID_estado) REFERENCES Estado (ID)
+        )
+
+        CREATE TABLE Atendimento (
+            ID int PRIMARY KEY,
+            Inicio timestamp,
+            Fim timestamp,
+            Mesa int,
+            FOREIGN KEY(ID_empregado) REFERENCES Empregado (ID)
+        )
+
+        CREATE TABLE Empresa (
+            Nome varchar,
+            CNPJ char,
+            ID int PRIMARY KEY,
+            Responsavel varchar,
+            Logradouro varchar,
+            FOREIGN KEY(ID_bairro) REFERENCES Bairro (ID)
+        )
+
+        CREATE TABLE Bairro (
+            ID int PRIMARY KEY,
+            Nome varchar,
+            ID_cidade int,
+            FOREIGN KEY(ID_cidade) REFERENCES Cidade (ID)
+        )
+
+        CREATE TABLE Contato (
+            ID int PRIMARY KEY,
+            Contato varchar,
+            ID_dono int,
+            FOREIGN KEY(ID_contatavel) REFERENCES Contatavel (ID),
+            FOREIGN KEY(ID_tipo) REFERENCES Tipo (ID)
+        )
+
+        CREATE TABLE Empregado (
+            Nome varchar,
+            CPF char,
+            ID int PRIMARY KEY,
+            Salário double,
+            ID_empresa int,
+            FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
+        )
+
+        CREATE TABLE Usuario (
+            ID int PRIMARY KEY,
+            CPF char,
+            Nome varchar,
+            Data_nasc Date
+        )
+
+        CREATE TABLE Cartao (
+            ID int PRIMARY KEY,
+            Numero char,
+            Verificador int,
+            Validade Date,
+            Bandeira varchar,
+            Titular varchar,
+            CPF_Titular char
+        )
+
+        CREATE TABLE Contatavel (
+            ID int PRIMARY KEY,
+            Tipo varchar
+        )
+
+        CREATE TABLE Tipo (
+            ID int PRIMARY KEY,
+            Nome varchar
+        )
+
+        CREATE TABLE pertence a (
+            ID_usuario int,
+            ID_cartao int,
+            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID),
+            FOREIGN KEY(ID_cartao) REFERENCES Cartao (ID)
+        )
+
+        CREATE TABLE recebe (
+            ID_atendimento int,
+            ID_usuario int,
+            FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
+            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
+        )
+
+        CREATE TABLE avalia (
+            Nota double,
+            Avaliacao varchar,
+            ID_atendimento int,
+            ID_usuario int,
+            FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
+            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
+        )
+
+        CREATE TABLE compra (
+            Valor_pago double,
+            ID_item int,
+            ID_usuario int,
+            FOREIGN KEY(ID_item) REFERENCES Item_vendido (ID),
+            FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
+        )
+
+        CREATE TABLE vende (
+            Preco double,
+            ID_produto int,
+            ID_empresa int,
+            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
+            FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
+        )
+
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
