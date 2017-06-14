@@ -436,6 +436,23 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (1, 'usuario'),
         (2, 'empresa');
         
+        INSERT INTO BAIRRO (ID, NOME, ID_CIDADE) VALUES
+        (1, "Jardim Camburi", 2),
+        (2, "Praia da Costa", 1),
+        (3,"Laranjeiras", 4),
+        (4,"Campo Grande", 3);
+
+
+       INSERT INTO CIDADE (ID, NOME, ID_ESTADO) VALUES
+       (1, "Vila Velha", 1),
+       (2, "Vitória", 1),
+       (3, "Cariacica", 1),
+       (4, "Serra", 1);
+
+       INSERT INTO ESTADO (ID,NOME)
+       (1, "Espirito Santo");
+        
+        
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (tabelas e estruturas de dados + dados a serem inseridos)
