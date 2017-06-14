@@ -147,7 +147,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     
 ### 6	MODELO LÓGICO<br>
 
-    ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Lógico.jpg "Modelo Lógico")
+    ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Logico.jpg "Modelo Lógico")
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
