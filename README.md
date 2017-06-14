@@ -164,40 +164,31 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 
 ### 7	MODELO FÍSICO<br>
-        
-        CREATE TABLE Item_vendido (
-            ID int PRIMARY KEY,
-            Preco double,
-            Quantidade int,
-            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
-            FOREIGN KEY (ID_atendimento) REFERENCES Atendimento (ID)
-        )
 
         CREATE TABLE Produto (
             ID int PRIMARY KEY,
             Descrição varchar,
             Categoria varchar
-        )
+        );
 
         CREATE TABLE Estado (
             Nome varchar,
             ID int PRIMARY KEY
-        )
+        );
 
         CREATE TABLE Cidade (
             ID int PRIMARY KEY,
             Nome varchar,
             ID_estado int,
             FOREIGN KEY(ID_estado) REFERENCES Estado (ID)
-        )
+        );
 
-        CREATE TABLE Atendimento (
+        CREATE TABLE Bairro (
             ID int PRIMARY KEY,
-            Inicio timestamp,
-            Fim timestamp,
-            Mesa int,
-            FOREIGN KEY(ID_empregado) REFERENCES Empregado (ID)
-        )
+            Nome varchar,
+            ID_cidade int,
+            FOREIGN KEY(ID_cidade) REFERENCES Cidade (ID)
+        );
 
         CREATE TABLE Empresa (
             Nome varchar,
@@ -205,39 +196,64 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
             ID int PRIMARY KEY,
             Responsavel varchar,
             Logradouro varchar,
+            ID_bairro int,
             FOREIGN KEY(ID_bairro) REFERENCES Bairro (ID)
-        )
-
-        CREATE TABLE Bairro (
-            ID int PRIMARY KEY,
-            Nome varchar,
-            ID_cidade int,
-            FOREIGN KEY(ID_cidade) REFERENCES Cidade (ID)
-        )
-
-        CREATE TABLE Contato (
-            ID int PRIMARY KEY,
-            Contato varchar,
-            ID_dono int,
-            FOREIGN KEY(ID_contatavel) REFERENCES Contatavel (ID),
-            FOREIGN KEY(ID_tipo) REFERENCES Tipo (ID)
-        )
+        );
 
         CREATE TABLE Empregado (
             Nome varchar,
             CPF char,
             ID int PRIMARY KEY,
-            Salário double,
+            Salario numeric,
             ID_empresa int,
             FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
-        )
+        );
+
+        CREATE TABLE Atendimento (
+            ID int PRIMARY KEY,
+            Inicio timestamp,
+            Fim timestamp,
+            Mesa int,
+            ID_empregado int,
+            FOREIGN KEY(ID_empregado) REFERENCES Empregado (ID)
+        );
+
+        CREATE TABLE Item_vendido (
+            ID int PRIMARY KEY,
+            Preco numeric,
+            Quantidade int,
+            ID_produto int,
+            ID_atendimento int,
+            FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
+            FOREIGN KEY (ID_atendimento) REFERENCES Atendimento (ID)
+        );
+
+        CREATE TABLE Contatavel (
+            ID int PRIMARY KEY,
+            Tipo varchar
+        );
+
+        CREATE TABLE Tipo (
+            ID int PRIMARY KEY,
+            Nome varchar
+        );
+
+        CREATE TABLE Contato (
+            ID int PRIMARY KEY,
+            Contato varchar,
+            ID_dono int,
+            ID_contatavel int,
+            ID_tipo int,
+            FOREIGN KEY(ID_contatavel) REFERENCES Contatavel (ID),
+            FOREIGN KEY(ID_tipo) REFERENCES Tipo (ID)
+        );
 
         CREATE TABLE Usuario (
             ID int PRIMARY KEY,
             CPF char,
             Nome varchar,
             Data_nasc Date
-        )
+        );
 
         CREATE TABLE Cartao (
             ID int PRIMARY KEY,
@@ -247,56 +263,46 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
             Bandeira varchar,
             Titular varchar,
             CPF_Titular char
-        )
+        );
 
-        CREATE TABLE Contatavel (
-            ID int PRIMARY KEY,
-            Tipo varchar
-        )
-
-        CREATE TABLE Tipo (
-            ID int PRIMARY KEY,
-            Nome varchar
-        )
-
-        CREATE TABLE pertence a (
+        CREATE TABLE pertence_a (
             ID_usuario int,
             ID_cartao int,
             FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID),
             FOREIGN KEY(ID_cartao) REFERENCES Cartao (ID)
-        )
+        );
 
         CREATE TABLE recebe (
             ID_atendimento int,
             ID_usuario int,
             FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
             FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
+        );
 
         CREATE TABLE avalia (
-            Nota double,
+            Nota real,
             Avaliacao varchar,
             ID_atendimento int,
             ID_usuario int,
             FOREIGN KEY(ID_atendimento) REFERENCES Atendimento (ID),
             FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
+        );
 
         CREATE TABLE compra (
-            Valor_pago double,
+            Valor_pago numeric,
             ID_item int,
             ID_usuario int,
             FOREIGN KEY(ID_item) REFERENCES Item_vendido (ID),
             FOREIGN KEY(ID_usuario) REFERENCES Usuario (ID)
-        )
+        );
 
         CREATE TABLE vende (
-            Preco double,
+            Preco numeric,
             ID_produto int,
             ID_empresa int,
             FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
             FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
-        )
+        );
 
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
