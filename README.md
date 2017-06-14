@@ -643,11 +643,11 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
             (4, '20160429 19:46:00', '20160429 21:31:00', '8', 5),
             (5, '20160930 21:12:00', '20161001 01:05:00', '19', 6);
 
-        INSERT INTO ITEM_VENDIDO(ID, QUANTIDADE, PRECO, ID_PRODUTO) VALUES
-            (1, 2, 10, 1),
-            (2, 1, 15, 2),
-            (3, 1, 60, 3),
-            (4, 2, 10, 4);
+        INSERT INTO ITEM_VENDIDO(ID, QUANTIDADE, PRECO, ID_PRODUTO, ID_ATENDIMENTO) VALUES
+            (1, 2, 10, 1, 1),
+            (2, 1, 15, 2, 2),
+            (3, 1, 60, 3, 3),
+            (4, 2, 10, 4, 4);
 
         INSERT INTO CONTATAVEL (ID, TIPO) VALUES
             (1, 'usuario'),
@@ -736,24 +736,43 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-        `SELECT * FROM 	CARTAO`
-        `SELECT * FROM 	pertence_a`
-        `SELECT * FROM 	USUARIO`
-        `SELECT * FROM 	CONTATO`
-        `SELECT * FROM 	avalia`
-        `SELECT * FROM 	ATENDIMENTO`
-        `SELECT * FROM 	compra`
-        `SELECT * FROM 	EMPREGADO`
-        `SELECT * FROM 	EMPRESA`
-        `SELECT * FROM 	ITEM_VENDIDO`
-        `SELECT * FROM 	PRODUTO`
-        `SELECT * FROM 	vende`
-        `SELECT * FROM 	BAIRRO`
-        `SELECT * FROM 	CIDADE`
-        `SELECT * FROM 	ESTADO`
-        `SELECT * FROM 	recebe`
-        `SELECT * FROM 	tipo`
-        `SELECT * FROM 	contatavel`
+        SELECT * FROM PRODUTO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_produto.PNG "Produto")
+        SELECT * FROM ESTADO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_estado.PNG "Estado")
+        SELECT * FROM CIDADE;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_cidade.PNG "Cidade")
+        SELECT * FROM BAIRRO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_bairro.PNG "Bairro")
+        SELECT * FROM EMPRESA;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_empresa.PNG "Empresa")
+        SELECT * FROM EMPREGADO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_empregado.PNG "Empregado")
+        SELECT * FROM ATENDIMENTO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_atendimento.PNG "Atendimento")
+        SELECT * FROM ITEM_VENDIDO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_item_vendido.PNG "Item vendido")
+        SELECT * FROM CONTATAVEL;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_contatavel.PNG "Contatavel")
+        SELECT * FROM TIPO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_tipo.PNG "Tipo")
+        SELECT * FROM CONTATO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_contato.PNG "Contato")
+        SELECT * FROM USUARIO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_usuario.PNG "Usuario")
+        SELECT * FROM CARTAO;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_cartao.PNG "Cartão")
+        SELECT * FROM PERTENCE_A;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_pertence_a.PNG "Pertence a")
+        SELECT * FROM RECEBE;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_recebe.PNG "Recebe")
+        SELECT * FROM AVALIA;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_avalia.PNG "Avalia")
+        SELECT * FROM COMPRA;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_compra.PNG "Compra")
+        SELECT * FROM VENDE;
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_vende.PNG "Vende")
+        
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
         `SELECT * FROM USUARIO WHERE DT_NASC > '20000322'`
         `SELECT * FROM EMPRESA WHERE NOME = 'IFES'`
