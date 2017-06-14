@@ -810,17 +810,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         SELECT * FROM EMPREGADO WHERE SALARIO > 2000
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_empregado.PNG "Empregado")
         
-        SELECT * FROM ITEM_VENDIDO WHERE PRECO > 100
+        SELECT * FROM ITEM_VENDIDO WHERE PRECO > 10
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_item_vendido.PNG "Item vendido")
 
-        SELECT * FROM ATENDIMENTO WHERE FIM IS NULL
+        SELECT * FROM ATENDIMENTO WHERE FIM < '2016-05-10 23:50:00'
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_atendimento.PNG "Atendimento")
         
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
-        SELECT * FROM EMPRESA WHERE NOME IS NOT LIKE '%IFES%'
-        SELECT * FROM PRODUTO WHERE DESCRICAO IS LIKE '%BATATA%'
-        SELECT * FROM CARTAO WHERE TITULAR IS LIKE '%JOAO%'
-        SELECT * FROM CONTATO WHERE TIPO IS LIKE 'CEL'
+        SELECT * FROM EMPRESA WHERE NOME NOT LIKE '%IFES%'
+        SELECT * FROM PRODUTO WHERE DESCRICAO LIKE '%BATATA%'
+        SELECT * FROM CARTAO WHERE TITULAR LIKE '%JOAO%'
+        SELECT * FROM CONTATO WHERE TIPO LIKE 'CEL'
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
         `UPDATE USUARIO SET DATA_NASC = '19900220' WHERE ID = 1`
         `UPDATE EMPREGADO SET SALARIO = 3000 WHERE NOME IS LIKE 'FULANO'`
