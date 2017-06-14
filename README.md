@@ -260,6 +260,12 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (40	,'lkj@rest.com'	,'email'	)
 
 
+        INSERT INTO AVALIACAO (ID, TEXTO, NOTA, ID_USUARIO, ID_ATENDIMENTO) VALUES
+        (1, 'ótimo', '5', 2, 3),
+        (2, 'mais ou menos mais pra mais', '3', 3, 2),
+        (3, 'mais ou menos mais pra menos', '2', 4, 1);
+        
+        
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
         (tabelas e estruturas de dados + dados a serem inseridos)
