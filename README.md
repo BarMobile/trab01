@@ -82,7 +82,46 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
+
+    USUARIO: Tabela que armazena as informações relativas ao usuário em geral da aplicação.
+    CPF: Campo que armazena o número de CPF para cada usuário
+    Data_Nasc: Campo que armazena a data de nascimento do usuário cadastrado.
     
+    CARTAO: Tabela que armazena as informações relativas aos cartões de credito cadastrados.
+    NUMERO: Campo que armazena o Número impresso no cartão.
+    VERIFICADOR: Campo que armazena o número do código verificador do cartão.
+    VALIDADE: Campo que armazena a data de validade do cartão.
+    BANDEIRA: Campo que armazena o nome da bandeira do cartão.
+    CPF_TITULAR: Campo que armazena o CPF do titular do cartão.
+    TITULAR: Campo que armazena o nome do titular do cartão.
+    
+    USUARIO_CARTAO: Tabela que armazena as informações relativas ao usuário e seus respectivos cartões.
+    
+    AVALIACAO:  Tabela que armazena as informações relativas as avaliações feitas pelos usuários sobre cada atendimento.
+    TEXTO: Campo que armazena o comentário sobre a avaliação.
+    NOTA: Campo que armazena o número relativo a nota da avaliação.
+    
+    ATENDIMENTO: Tabela que armazena as inforções relativas ao atendimento do usuário com a empresa.
+    INICIO: Campo que armazena a hora de início do atendimento.
+    FIM: Campo que armazena a hora de fim do atendimento.
+    MESA: Campo que armazena a mesa do atendimento.
+    
+    USUARIO_ATENDIMENTO: Tabela que armazena as informações relativas ao atendimento para cada usuário.
+    
+    EMPRESA: Tabela que armazena as informações de cada empresa cadastrada.
+    NOME: Campo que armazena o nome de cada empresa cadastrada.
+    CNPJ: Campo que armazena o CNPJ de cada empresa cadastrada.
+    RESPONSÁVEL: Campo que armazena o nome do responsável de cada empresa cadastrada.
+    LOGRADOURO: Campo que armazena o endereço de cada empresa cadastrada. 
+    
+    BAIRRO: Tabela que armazena as informações do bairro das empresas cadastradas.
+    Nome: Campo que armazena o nome do bairro da empresa cadastrada.
+    
+    CIDADE: Tabela que armazena as informações da cidade das empresas cadastradas.
+    NOME: Campo que armazena o nome da cidade da empresa cadastrada.
+    
+    ESTADO: Tabela que armazena as informações dos estados das empresas cadastradas.
+    NOME: Campo que armazena o nome do estado da empresa cadastrada.
     
     PRODUTO: Tabela que armazena as informações dos produtos.
     DESCRIÇÃO: Campo que armazena a descrição do produto.
