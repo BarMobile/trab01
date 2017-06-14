@@ -738,38 +738,55 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         SELECT * FROM PRODUTO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_produto.PNG "Produto")
+
         SELECT * FROM ESTADO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_estado.PNG "Estado")
+
         SELECT * FROM CIDADE;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_cidade.PNG "Cidade")
+
         SELECT * FROM BAIRRO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_bairro.PNG "Bairro")
+
         SELECT * FROM EMPRESA;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_empresa.PNG "Empresa")
+
         SELECT * FROM EMPREGADO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_empregado.PNG "Empregado")
+
         SELECT * FROM ATENDIMENTO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_atendimento.PNG "Atendimento")
+
         SELECT * FROM ITEM_VENDIDO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_item_vendido.PNG "Item vendido")
+
         SELECT * FROM CONTATAVEL;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_contatavel.PNG "Contatavel")
+
         SELECT * FROM TIPO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_tipo.PNG "Tipo")
+
         SELECT * FROM CONTATO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_contato.PNG "Contato")
+
         SELECT * FROM USUARIO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_usuario.PNG "Usuario")
+
         SELECT * FROM CARTAO;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_cartao.PNG "Cartão")
+
         SELECT * FROM PERTENCE_A;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_pertence_a.PNG "Pertence a")
+
         SELECT * FROM RECEBE;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_recebe.PNG "Recebe")
+
         SELECT * FROM AVALIA;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_avalia.PNG "Avalia")
+
         SELECT * FROM COMPRA;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_compra.PNG "Compra")
+
         SELECT * FROM VENDE;
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_vende.PNG "Vende")
         
