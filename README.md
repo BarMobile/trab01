@@ -808,8 +808,14 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
         SELECT * FROM EMPREGADO WHERE SALARIO > 2000
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_empregado.PNG "Empregado")
+        
         SELECT * FROM ITEM_VENDIDO WHERE PRECO > 100
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_item_vendido.PNG "Item vendido")
+
         SELECT * FROM ATENDIMENTO WHERE FIM IS NULL
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/logicos/logicos_atendimento.PNG "Atendimento")
+        
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
         SELECT * FROM EMPRESA WHERE NOME IS NOT LIKE '%IFES%'
         SELECT * FROM PRODUTO WHERE DESCRICAO IS LIKE '%BATATA%'
