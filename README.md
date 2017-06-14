@@ -791,20 +791,30 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/select_all/select_all_vende.PNG "Vende")
         
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
-        `SELECT * FROM USUARIO WHERE DT_NASC > '20000322'`
-        `SELECT * FROM EMPRESA WHERE NOME = 'IFES'`
-        `SELECT * FROM ATENDIMENTO WHERE MESA = 5`
-        `SELECT * FROM CARTAO WHERE VALIDADE > 20170612`
-        `SELECT * FROM AVALICAO WHERE NOTA > 3`
+        SELECT * FROM USUARIO WHERE DATA_NASC > '1997-01-01'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/where/where_usuario.PNG "Usuario")
+
+        SELECT * FROM EMPRESA WHERE NOME = 'ABC bar'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/where/where_empresa.PNG "Empresa")
+
+        SELECT * FROM ATENDIMENTO WHERE MESA = 3
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/where/where_atendimento.PNG "Atendimento")
+        
+        SELECT * FROM CARTAO WHERE VALIDADE > '2018-06-12'
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/where/where_cartao.PNG "Cartão")
+
+        SELECT * FROM AVALIA WHERE NOTA > 2
+![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/where/where_avalia.PNG "Avalia")
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
-        `SELECT * FROM EMPREGADO WHERE SALARIO > 2000`
-        `SELECT * FROM ITEM_VENDIDO WHERE PRECO > 100 `
-        `SELECT * FROM ATENDIMENTO WHERE FIM IS NULL`
+        SELECT * FROM EMPREGADO WHERE SALARIO > 2000
+        SELECT * FROM ITEM_VENDIDO WHERE PRECO > 100
+        SELECT * FROM ATENDIMENTO WHERE FIM IS NULL
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
-        `SELECT * FROM EMPRESA WHERE NOME IS NOT LIKE '%IFES%'`
-        `SELECT * FROM PRODUTO WHERE DESCRICAO IS LIKE '%BATATA%'`
-        `SELECT * FROM CARTAO WHERE TITULAR IS LIKE '%JOAO%'`
-        `SELECT * FROM CONTATO WHERE TIPO IS LIKE 'CEL'`
+        SELECT * FROM EMPRESA WHERE NOME IS NOT LIKE '%IFES%'
+        SELECT * FROM PRODUTO WHERE DESCRICAO IS LIKE '%BATATA%'
+        SELECT * FROM CARTAO WHERE TITULAR IS LIKE '%JOAO%'
+        SELECT * FROM CONTATO WHERE TIPO IS LIKE 'CEL'
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
         `UPDATE USUARIO SET DATA_NASC = '19900220' WHERE ID = 1`
         `UPDATE EMPREGADO SET SALARIO = 3000 WHERE NOME IS LIKE 'FULANO'`
