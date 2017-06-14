@@ -178,17 +178,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         b) inclusão das instruções para execução de outros procedimentos necessários (caso existam)
         
-        INSERT INTO USUARIO (ID, NOME, CPF, DATA_NASC) VALUES 
-        (1, 'Gary', '123.456.789', '19970123'),
-        (2, 'José', '456.789.123', '19961110'),
-        (3, 'Yago', '951.385.357', '19950522'),
-        (4, 'Thalles', '654.357.159', '19960430'),
-        (5, 'Luiz', '356.156.657', '19970731'),
-        (6, 'Gabriel', '954.687.621', '19970615'),
-        (7, 'Paulo', '459.684.159', '19950202'),
-        (8, 'Brenno', '653.875.542', '19971106'),
-        (9, 'Ana', '986.154.266', '19960324'),
-        (10, 'Ícaro', '455.566.788', '19970620');
+        INSERT INTO USUARIO(ID,NOME,CPF,DATA_NASC)VALUES
+        (1,'Gary',	'123456789',	'19970123'),
+        (2,'José',	'456789123',	'19961110'),
+        (3,'Yago',	'951385357',	'19950522'),
+        (4,'Thalles',	'654357159',	'19960430'),
+        (5,'Luiz',	'356156657',	'19970731'),
+        (6,'Gabriel',	'954687621',	'19970615'),
+        (7,'Paulo',	'459684159',	'19950202'),
+        (8,'Brenno',	'653875542',	'19971106'),
+        (9,'Ana',	'986154266',	'19960324'),
+        (10,'Ícaro',	'455566788',	'19970620')
 
         INSERT INTO CARTAO (ID, NUMERO, VERIFICADOR, VALIDADE, BANDEIRA, TITULAR, CPF_TITULAR) VALUES
         (1, '456.456.456.456', '987', '20200501', 'Visa', 'Gary', '123.456.789'),
@@ -208,7 +208,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (7, 'ZXC bar',  '2542476', 'Cleiton', 'rua x, 98'),
         (8, 'CVB bar', '9870564', 'Bernardo', 'av b, 92'),
         (9, 'MNX bar', '6171468', 'Tarcisio', 'av k, 108'),
-        10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37');
+        (10, 'LKJ restaurante', '6211844', 'Lucas', 'rua w, 37');
 
         INSERT INTO ATENDIMENTO (ID, INICIO, FIM, MESA, ID_EMPRESA) VALUES
         (1, '20160926 22:11:00', '20160927 00:11:00', '3', 5),
@@ -216,6 +216,48 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (3, '20161028 20:23:00', '20161028 23:40:00', '12', 4),
         (4, '20160429 19:46:00', '20160429 21:31:00', '8', 9),
         (5, '20160930 21:12:00', '20161001 01:05:00', '19', 6);
+        
+        INSERT INTO CONTATO(ID, Contato, Tipo) VALUES
+        (1,'27999998888'	,'telefone'	),
+        (2,'27988889999'	,'telefone'	),
+        (3,'27987876868'	,'telefone'	),
+        (4,'27985849194'	,'telefone'	),
+        (5,'27999664488'	,'telefone'	),
+        (6,'27999115588'	,'telefone'	),
+        (7,'27988556688'	,'telefone'	),
+        (8,'27933445566'	,'telefone'	),
+        (9,'27987859898'	,'telefone'	),
+        (10,'27986868787'	,'telefone'	),
+        (11,'gary@email.com'	,'email'	),
+        (12,'ze@email.com'	,'email'	),
+        (13,'yago@email.com'	,'email'	),
+        (14,'thales@email.com'	,'email'	),
+        (15,'luiz@email.com'	,'email'	),
+        (16,'gabriel@email.com'	,'email'	),
+        (17,'paulo@email.com'	,'email'	),
+        (18,'brenno@email.com'	,'email'	),
+        (19,'ana@email.com'	,'email'	),
+        (20,'icaro@email.com'	,'email'	),
+        (21,'33224455'	,'telefone'	),
+        (22,'33335556'	,'telefone'	),
+        (23,'33213321'	,'telefone'	),
+        (24,'33324567'	,'telefone'	),
+        (25,'33456711'	,'telefone'	),
+        (26,'33184455'	,'telefone'	),
+        (27,'33164878'	,'telefone'	),
+        (28,'33261548'	,'telefone'	),
+        (29,'33649754'	,'telefone'	),
+        (30,'32315754'	,'telefone'	),
+        (31,'abc@bar.com'	,'email'	),
+        (32,'jkl@rest.com'	,'email'	),
+        (33,'kwl@bar.com'	,'email'	),
+        (34,'xyz@bar.com'	,'email'	),
+        (35,'brt@rest.com'	,'email'	),
+        (36,'yyi@rest.com'	,'email'	),
+        (37,'zxc@bar.com'	,'email'	),
+        (38	,'cvb@bar.com'	,'email'	),
+        (39	,'mnx@bar.com'	,'email'	),
+        (40	,'lkj@rest.com'	,'email'	)
 
 
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
