@@ -273,21 +273,21 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         `SELECT * FROM CARTAO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/CARTAO.PNG](Cartao)
+        ![Cartao](https://github.com/BarMobile/trab01/blob/master/imagens/CARTAO.PNG)
         `SELECT * FROM USUARIO_CARTAO`
         `SELECT * FROM USUARIO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/usuario.PNG](Usuario)
+        ![Cartao](https://github.com/BarMobile/trab01/blob/master/imagens/CARTAO.PNG)
         `SELECT * FROM USUARIO_CONTATO`
         `SELECT * FROM CONTATO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/contato.PNG](Contato)
+        ![contato](https://github.com/BarMobile/trab01/blob/master/imagens/contato.PNG)
         `SELECT * FROM USUARIO_ATENDIMENTO`
         `SELECT * FROM ATENDIMENTO`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/atendimento.PNG](atendimento)
+        ![atendimento](https://github.com/BarMobile/trab01/blob/master/imagens/atendimento.PNG)
         `SELECT * FROM AVALIACAO`
         `SELECT * FROM EMPREGADO`
         `SELECT * FROM EMPRESA_CONTATO`
         `SELECT * FROM EMPRESA`
-        ![https://github.com/BarMobile/trab01/blob/master/imagens/empresa.PNG](empresa)
+        ![Empresa](https://github.com/BarMobile/trab01/blob/master/imagens/empresa.PNG)
         `SELECT * FROM USUARIO_ITEM`
         `SELECT * FROM ITEM_VENDIDO`
         `SELECT * FROM PRODUTO`
