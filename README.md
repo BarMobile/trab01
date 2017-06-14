@@ -305,7 +305,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (7,'Paulo',	'459684159',	'19950202'),
         (8,'Brenno',	'653875542',	'19971106'),
         (9,'Ana',	'986154266',	'19960324'),
-        (10,'Ícaro',	'455566788',	'19970620')
+        (10,'Ícaro',	'455566788',	'19970620');
 
         INSERT INTO CARTAO (ID, NUMERO, VERIFICADOR, VALIDADE, BANDEIRA, TITULAR, CPF_TITULAR) VALUES
         (1, '456456456456', '987', '20200501', 'Visa', 'Gary', '123456789'),
@@ -354,7 +354,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (17,'paulo@email.com',3,2,1),
         (18,'brenno@email.com',4,2,1),
         (19,'ana@email.com',5,2,1),
-        (20,'icaro@email.com',6,2,1)
+        (20,'icaro@email.com',6,2,1);
 
 
         INSERT INTO AVALIACAO (ID, TEXTO, NOTA, ID_USUARIO, ID_ATENDIMENTO) VALUES
@@ -368,26 +368,26 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (3,	3,	5),
         (4,	4,	6),
         (5,	5,	8),
-        (6,	6,	10)
+        (6,	6,	10);
         
         INSERT INTO item_vendido(ID, QUANTIDADE,PRECO, id_produto) VALUES
         (1, 2, 10, 1),
         (2, 1, 15, 2),
         (3, 1, 60, 3),
-        (4, 2, 10, 4)
+        (4, 2, 10, 4);
         
         INSERT INTO PRODUTO (ID, DESCRICAO, CATEGORIA) VALUES
         (1, 'Budweiser', 'Cerveja'),
         (2, 'Batata Frita', 'Porcao'),
         (3, 'Frango a passarinho', 'Porcao'),
-        (4, 'Coca Cola 2l', 'Refrigerante')
+        (4, 'Coca Cola 2l', 'Refrigerante');
         
         INSERT INTO vende (id_produto, preco, id_empresa) VALUES 
         (1, 10,1),
         (1, 7,2),
         (2, 15, 3),
         (2, 15, 4),
-        (4, 10, 1)
+        (4, 10, 1);
         
         INSERT INTO EMPREGADO (ID, NOME, CPF, SALARIO, ID_EMPRESA) VALUES 
         (1, 'FULANO', '11111111111', 3000, 6),
@@ -395,13 +395,13 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (3, 'BELTRANO', '33333333333', 2500, 3),
         (4, 'JOAO', '44444444444', 1500), 2,
         (5, 'MARIA', '555555555555', 1800, 1),
-        (6, 'JOSE', '66666666666', 4000, 4)
+        (6, 'JOSE', '66666666666', 4000, 4);
         
         INSERT INTO COMPRA (ID_USUARIO, VALOR_PAGO, ID_ITEM) VALUES 
         (1, 10, 1),
         (2, 15, 2),
         (3, 20, 3),
-        (4, 7, 1)
+        (4, 7, 1);
         
         INSERT INTO recebe(ID_ATENDIMENTO, ID USUARIO) VALUES
         (1,2),
@@ -409,7 +409,15 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         (2,4),
         (3,5),
         (3,6),
-        (4,3)
+        (4,3);
+        
+        INSERT INTO TIPO (ID, NOME) VALUES
+        (1, 'telefone'),
+        (2, 'email');
+        
+        INSERT INTO CONTATAVEL (ID,TIPO) VALUES
+        (1, 'usuario'),
+        (2, 'empresa');
         
 #### 8.3 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) Junção dos scripts anteriores em um único script 
