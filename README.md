@@ -837,8 +837,36 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         `DELETE FROM ATENDIMENTO WHERE MESA = 10`
         `DELETE FROM avalia WHERE NOTA = 0`
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
-        Entrega até este ponto em: (Data a ser definida)
+        SELECT NOTA, AVALIACAO, INICIO, MESA 
+        FROM AVALIA
+        INNER JOIN ATENDIMENTO
+        ON (AVALIA.ID_ATENDIMENTO = ATENDIMENTO.ID)
+        ORDER BY ID_ATENDIMENTO;
+        
+        SELECT CONTATO.ID, CONTATO, TIPO  
+        FROM CONTATO
+        INNER JOIN CONTATAVEL
+        ON(CONTATO.ID_CONTATAVEL = CONTATAVEL.ID)
+        ORDEER BY CONTATO.ID;
+        
+        
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
+        SELECT TIPO, COUNT(*) AS QUANTIDADE
+        FROM CONTATAVEL
+        GROUP BY TIPO;
+        
+        SELECT DESCRICAO, COUNT(*) AS QUANTIDADE
+        FROM PRODUTO
+        GROUP BY DESCRICAO;
+        
+        SELECT NOME, COUNT(*) AS QUANTIDADE
+        FROM BAIRRO
+        GROUP BY NOME;
+        
+        SELECT NOTA, COUNT(*) AS QUANTIDADE
+        FROM AVALIA
+        GROUP BY NOTA;
+        
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Todas Possíveis)<br>
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
