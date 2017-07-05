@@ -837,6 +837,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         `DELETE FROM ATENDIMENTO WHERE MESA = 10`
         `DELETE FROM avalia WHERE NOTA = 0`
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
+      
         SELECT MESA, NOTA, AVALIACAO, INICIO, FIM
         FROM AVALIA
         INNER JOIN ATENDIMENTO
@@ -848,6 +849,26 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         INNER JOIN CONTATAVEL
         ON(CONTATO.ID_CONTATAVEL = CONTATAVEL.ID)
         ORDER BY CONTATO.ID;
+        
+        SELECT NOME, CPF, NUMERO
+        FROM USUARIO
+        INNER JOIN CARTAO
+        ON(USUARIO.CPF = CARTAO.CPF_TITULAR)
+        
+        SELECT NOME,NUMERO 
+        FROM USUARIO
+        INNER JOIN PERTENCE_A
+        ON (USUARIO.ID = PERTENCE_A.ID_USUARIO)
+        INNER JOIN CARTAO
+        ON (PERTENCE_A.ID_CARTAO = CARTAO.ID)
+        
+        SELECT NOME, CPF, NOTA, AVALIACAO, MESA
+        FROM USUARIO
+        INNER JOIN AVALIA
+        ON (USUARIO.ID = AVALIA.ID_USUARIO)
+        INNER JOIN ATENDIMENTO
+        ON (AVALIA.ID_ATENDIMENTO = ATENDIMENTO.ID)
+        
         
         
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
