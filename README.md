@@ -837,17 +837,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         `DELETE FROM ATENDIMENTO WHERE MESA = 10`
         `DELETE FROM avalia WHERE NOTA = 0`
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
-        SELECT NOTA, AVALIACAO, INICIO, MESA 
+        SELECT MESA, NOTA, AVALIACAO, INICIO, FIM
         FROM AVALIA
         INNER JOIN ATENDIMENTO
         ON (AVALIA.ID_ATENDIMENTO = ATENDIMENTO.ID)
-        ORDER BY ID_ATENDIMENTO;
+        ORDER BY AVALIACAO;
         
         SELECT CONTATO.ID, CONTATO, TIPO  
         FROM CONTATO
         INNER JOIN CONTATAVEL
         ON(CONTATO.ID_CONTATAVEL = CONTATAVEL.ID)
-        ORDEER BY CONTATO.ID;
+        ORDER BY CONTATO.ID;
         
         
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
@@ -868,7 +868,20 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         GROUP BY NOTA;
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
+        SELECT MESA, NOTA FROM ATENDIMENTO
+        LEFT OUTER JOIN AVALIA
+        ON (ATENDIMENTO.ID = AVALIA.ID_ATENDIMENTO)
+        
+        SELECT MESA, NOTA FROM AVALIA
+        RIGHT OUTER JOIN ATENDIMENTO
+        ON (ATENDIMENTO.ID = AVALIA.ID_ATENDIMENTO)
+        
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Todas Possíveis)<br>
+        
+        CREATE VIEW SALARIO_ANUAL_EMPREGADO AS
+        (SELECT NOME,SALARIO*12 AS SALARIO ANUAL
+        FROM EMPREGADO)
+        
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
         Entrega até este ponto em: (Data a ser definida)
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
