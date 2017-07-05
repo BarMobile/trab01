@@ -60,7 +60,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
 ![Alt text](https://github.com/BarMobile/trab01/blob/master/imagens/Modelo%20Conceitual.jpg "Modelo Conceitual")
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    Grupo 1: David, Ícaro, Leonardo Murakami, Luiz Henrique.
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
