@@ -61,7 +61,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
     
 #### 5.1 Validação do Modelo Conceitual
     Grupo 1: David, Ícaro, Leonardo Murakami, Luiz Henrique.
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    Grupo 2: Brenno Milizanezi, Caio Pupolin, Lucas Sabino, Luiz Antônio.
 
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
