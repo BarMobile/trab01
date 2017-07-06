@@ -905,12 +905,13 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
-        SELECT MESA, NOTA
+        SELECT ATENDIMENTO.MESA, AVALIA.NOTA
         FROM ATENDIMENTO
         LEFT OUTER JOIN AVALIA
         ON (ATENDIMENTO.ID = AVALIA.ID_ATENDIMENTO);
         
-        SELECT MESA, NOTA FROM AVALIA
+        SELECT ATENDIMENTO.MESA, AVALIA.NOTA 
+        FROM AVALIA
         RIGHT OUTER JOIN ATENDIMENTO
         ON (ATENDIMENTO.ID = AVALIA.ID_ATENDIMENTO);
         
@@ -929,7 +930,13 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         
         CREATE VIEW SALARIO_ANUAL_EMPREGADO AS
         (SELECT NOME,SALARIO*12 AS SALARIO ANUAL
-        FROM EMPREGADO)
+        FROM EMPREGADO);
+        
+        CREATE VIEW USUARIO_CARTAO AS
+        (SELECT USUARIO.NOME, USUARIO.CPF, CARTAO.NUMERO
+        FROM USUARIO
+        INNER JOIN CARTAO
+        ON(USUARIO.CPF = CARTAO.CPF_TITULAR);
         
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
         Entrega até este ponto em: (Data a ser definida)
