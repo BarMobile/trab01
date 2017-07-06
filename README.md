@@ -303,6 +303,7 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
             FOREIGN KEY(ID_produto) REFERENCES Produto (ID),
             FOREIGN KEY(ID_empresa) REFERENCES Empresa (ID)
         );
+        ![Alt text](https://github.com/BarMobile/trab01/blob/master/CREATETABLES.SQL)
 
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
