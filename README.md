@@ -939,7 +939,17 @@ Prototipo Completo em: https://github.com/BarMobile/trab01/blob/master/Prototipo
         ON(USUARIO.CPF = CARTAO.CPF_TITULAR);
         
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
-        Entrega até este ponto em: (Data a ser definida)
+        SELECT NOME FROM USUARIO
+        WHERE ID IN(SELECT ID FROM COMPRA)
+
+        SELECT NOME FROM EMPRESA
+        WHERE ID IN (SELECT ID_EMPRESA FROM VENDE 
+        WHERE ID_PRODUTO =1)
+
+        SELECT NOME FROM USUARIO
+        WHERE ID IN (SELECT ID_USUARIO FROM AVALIA)
+        
+        
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 ### 11	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
         a) Outros grupos deverão ser capazes de restaurar o banco 
